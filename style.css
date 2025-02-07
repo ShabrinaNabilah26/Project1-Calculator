@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #f987d8, #af70e5);
+background-size: 400% 400%;
+animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+}
+    50% {
+        background-position: 100% 50%;
+}
+    100% {
+        background-position: 0% 50%;
+}
+}
+
+#butts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    font-size: 25px;
+    margin: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+    
+
+
+    
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#display{
+    width: 307px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+#Cal{
+    background-color: #212121;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    display: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.add{
+    background-color: #FFA07A;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+button:active{
+    opacity: 0.7;
+}
