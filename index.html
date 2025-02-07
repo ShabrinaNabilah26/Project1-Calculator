@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shabrina's Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h3>Hello guys this is my first calculator💻</h3>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shabrina's Calculator</title>
+    </head>
+    <body>
+    <div id='Cal'>
+    <input id='display' readonly>
+    <div id='butts'>
+    <button onclick='displayValue("")' class='add'></button>
+    <button onclick='displayValue("7")'>7</button>
+    <button onclick='displayValue("8")'>8</button>
+    <button onclick='displayValue("9")'>9</button>
+    <button onclick='displayValue("+")' class='add'>+</button>
+    <button onclick='displayValue("6")'>6</button>
+    <button onclick='displayValue("5")'>5</button>
+    <button onclick='displayValue("4")'>4</button>
+    <button onclick='displayValue("-")' class='add'>-</button>
+    <button onclick='displayValue("3")'>3</button>
+    <button onclick='displayValue("2")'>2</button>
+    <button onclick='displayValue("1")'>1</button>
+    <button onclick='displayValue("/")' class='add'>/</button>
+    <button onclick='displayValue("0")'>0</button>
+    <button onclick='displayValue(".")'>.</button>
+    <button onclick='Calculate()'>=</button>
+    <button onclick='Clear()' class='add'>C</button>
+    </div>
+    </div>
+    
+    <script>
+    const display = document.getElementById('display');
+
+    function displayValue(input){
+        display.value += input;
+    }
+    
+    function Clear(){
+        display.value = "";
+    }
+    
+    function Calculate(){
+        try{
+    display.value = eval(display.value);  
+        }
+        catch(error){
+            display.value = "Error";
+        }     
+    }
+    
+    </script>
+    </body>
+</html>
